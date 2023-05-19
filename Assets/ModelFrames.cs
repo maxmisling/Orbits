@@ -1,3 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class ModelFrames : MonoBehaviour
 {
     // You drag these all in once via the Inspector
@@ -7,7 +11,7 @@ public class ModelFrames : MonoBehaviour
 
     private void Awake()
     {
-        foreach(var model in models)
+        foreach (var model in models)
         {
             model.SetActive(false);
         }
@@ -19,7 +23,7 @@ public class ModelFrames : MonoBehaviour
 
         models[currentIndex].SetActive(true);
 
-        while(true)
+        while (true)
         {
             yield return new WaitForSeconds(1f / targetFramesPerSecond);
 
@@ -31,4 +35,3 @@ public class ModelFrames : MonoBehaviour
         }
     }
 }
-
