@@ -6,8 +6,8 @@ public class ModelFrames : MonoBehaviour
 {
     // You drag these all in once via the Inspector
     public GameObject[] models;
-
     public int targetFramesPerSecond = 60;
+
 
     private void Awake()
     {
@@ -17,10 +17,10 @@ public class ModelFrames : MonoBehaviour
         }
     }
 
+
     private IEnumerator Start()
     {
         var currentIndex = 0;
-
         models[currentIndex].SetActive(true);
 
         while (true)
