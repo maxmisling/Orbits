@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 466d53cd53eb7ad4dac4a42d2b7c94cd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Weddingday Personal Use
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: fd8252ff6b04d954693818caacfceed8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
