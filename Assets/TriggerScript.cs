@@ -15,14 +15,14 @@ public class TriggerScript : MonoBehaviour
         //loadSceneScript.LoadNewScene();
     }
 
-    public void OnClick()
+    public void ClickNewScene()
     {
         SceneManager.LoadScene(sceneName);
 
         //loadSceneScript.LoadNewScene();
     }
 
-    public void CreateCube()
+    public void CreateRedCube()
     {
 
 
@@ -30,7 +30,10 @@ public class TriggerScript : MonoBehaviour
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
         // Set the cube's position and scale
-        cube.transform.position = transform.position;
+        //cube.transform.position = transform.position;
+        Vector3 newPosition = new Vector3(3f, 1f, 1f);
+        cube.transform.position = newPosition;
+        //cube.transform.position = Vector3.zero;
         cube.transform.localScale = new Vector3(1f, 1f, 1f);
 
         // Get the cube's renderer component
@@ -38,6 +41,29 @@ public class TriggerScript : MonoBehaviour
 
         // Set the cube's material color to red
         cubeRenderer.material.color = Color.red;
+
+    }
+
+    public void CreateYellowCube()
+    {
+
+
+        // Create a new cube game object
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+
+        // Set the cube's position and scale
+        //cube.transform.position = transform.position;
+        // Set the new position for the cube
+        //cube.transform.position = Vector3.zero;
+        Vector3 newPosition = new Vector3(1f, 1f, 1f);
+        cube.transform.position = newPosition;
+        cube.transform.localScale = new Vector3(1f, 1f, 1f);
+
+        // Get the cube's renderer component
+        Renderer cubeRenderer = cube.GetComponent<Renderer>();
+
+        // Set the cube's material color to yellow
+        cubeRenderer.material.color = Color.yellow;
 
     }
 
