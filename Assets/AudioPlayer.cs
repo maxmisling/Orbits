@@ -30,5 +30,17 @@ public class AudioPlayer : MonoBehaviour
         // Start playing the audio clip
         audioSource.Play();
     }
-    
+
+    public void PlaySound2()
+    {
+        // Get the AudioSource component attached to the game object
+        audioSource = GetComponent<AudioSource>();
+
+        // Assign the audio clip to the AudioSource component
+        audioSource.clip = audioClip;
+
+        // Start playing the audio clip
+        audioSource.Play();
+    }
+
 }
